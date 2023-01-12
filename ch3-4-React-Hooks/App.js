@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { Button, StyleSheet, Switch, Text, View } from 'react-native';
+import CustomHook from './CustomHook';
 import StateWithClassComponent from './StateWithClassComponent';
 import StateWithFunctionComponent from './StateWithFuctionalComponent';
 import UseEffectWithClassComponent from './UseEffectWithClassComponent';
@@ -13,7 +14,9 @@ export default function App() {
       {/* <StateWithFunctionComponent /> */}
       {/* <StateWithClassComponent /> */}
       {/* {isTrue ?<UseEffectWithClassComponent />: null} */}
-      <UseEffectWithFunctionalComponent/>
+      {/* <UseEffectWithFunctionalComponent/> */}
+
+      <CustomHook/>
       <StatusBar style="auto" />
 
       <Button
